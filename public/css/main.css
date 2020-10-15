@@ -11,16 +11,21 @@ Com relação a especificidade o CSS pode ser aplicado de 3 maneiras
          E ai coloco o código css qualquer
      </style>
   
-  3º Como um arquivo externo ( que é o caso deste arquivo que fiz aqui agr)
-
-  seletores
-
-  # -> id
-*/
-
-body{
+  3º Como um arquivo externo ( que é o caso deste arquivo que fiz aqui agr)*/
+*{
+    margin: 0;
+    padding: 0;
+}
+  body{
     height: 100vh;
-    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%) 
-    no-repeat;
+    color: white;
+    
 }
 
+:root{
+    font-size: 62.5%;
+}
+
+body,imput, button, textarea{
+    font: 400 1.8rem/1 'Nunito', sans-serif;
+}

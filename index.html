@@ -12,55 +12,53 @@
        -->
     <link rel="icon" href="./public/images/logo-icon.png" />
     <!--inserindo o arquivo css-->
-    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/animation.css" />
+    <link rel="stylesheet" href="./public/css/page-landing.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
   </head>
   <body id="body">
-    <!--TAG de cabeçalho-->
-    <header>
-      <!--src (source - caminho da imagem)
-                logo.svg -> é um tipo de imagem escrita em HTML
-            -->
-      <img src="./public/images/logo.svg" alt="Logo marca de Happy" />
+    <div id="page-landing">
+      <div id="container">
+        <!--TAG de cabeçalho-->
+        <header>
+          <!--src (source - caminho da imagem)
+                  logo.svg -> é um tipo de imagem escrita em HTML
+              -->
+          <img
+            class="animate-up" 
+            id="logo" 
+            src="./public/images/logo.svg" 
+            alt="Logo marca de Happy" />
 
-      <!-- Div é um conteiner (caixa) que coloco coisas dentro
-        
-        Algumas TAGs (como a header, div) possuem o display em bloco, ou seja, ocupa uma 
-        linha inteira na janela do meu navegador. Já outras (como a strong) ocupam somente
-        o espaço necessario.
-    -->
-      <div>
-        <strong>Lavras</strong>
-        <p>Minas Gerais</p>
+          <!-- Div é um conteiner (caixa) que coloco coisas dentro
+          
+          Algumas TAGs (como a header, div) possuem o display em bloco, ou seja, ocupa uma 
+          linha inteira na janela do meu navegador. Já outras (como a strong) ocupam somente
+          o espaço necessario.
+      -->
+          <div class="location animate-up">
+            <strong>Lavras</strong>
+            <p>Minas Gerais</p>
+          </div>
+        </header>
+
+        <!--MAIN é onde eu coloco o conteúdo principal do meu website-->
+        <main>
+          <h1 class="animate-up">Leve felicidade para o mundo</h1>
+
+          <!--Crio seções no meu website-->
+          <section class="visit">
+            <p class="animate-up">Visite orfanatos e mude o dia de muitas criaças</p>
+
+            <!--title é um atributo global (todas as tags html tem esse atributo)-->
+            <a href="#" title="Visite orfanatos" class="animate-up">
+              <img src="./public/images/arrow.svg" alt="Ir para o mapa" />
+            </a>
+          </section>
+        </main>
       </div>
-    </header>
-
-    <!--MAIN é onde eu coloco o conteúdo principal do meu website-->
-    <main>
-      <h1>Leve felicidade para o mundo</h1>
-
-      <!--Crio seções no meu website-->
-      <section>
-        <p>Visite orfanatos e mude o dia de muitas criaças</p>
-
-        <!--title é um atributo global (todas as tags html tem esse atributo)-->
-        <a href="#" title="Visite orfanatos">
-          <img src="./public/images/arrow.svg" alt="Ir para o mapa" />
-        </a>
-      </section>
-    </main>
+    </div>
   </body>
 </html>
-
-<!--
-    HTML
-    Hypertext
-       hipertexto
-    
-    Markup
-       marcação <tag>
-    
-    Language
-        linguagem
-    
-    HTML é um documento
--->
