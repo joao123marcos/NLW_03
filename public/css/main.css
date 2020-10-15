@@ -1,0 +1,26 @@
+/*o que é uma regra css? 
+Com relação a especificidade o CSS pode ser aplicado de 3 maneiras
+ 
+  1º Como atributo dentro de uma TAG html (não é recomendado)
+     <body stylle="color: yellow">
+        algumas linhas de código
+     </body>
+  
+  2º Como uma Tag html
+     <style>
+         E ai coloco o código css qualquer
+     </style>
+  
+  3º Como um arquivo externo ( que é o caso deste arquivo que fiz aqui agr)
+
+  seletores
+
+  # -> id
+*/
+
+body{
+    height: 100vh;
+    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%) 
+    no-repeat;
+}
+
