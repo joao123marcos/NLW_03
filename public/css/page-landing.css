@@ -9,7 +9,7 @@
 
 #container{
     margin: auto;
-    width: 90%;
+    width: min(90%, 112rem);
 }
 
 .location, h1, .visit p{
@@ -31,8 +31,65 @@
 
     margin: auto;
     transition: background 200ms;
+
+    animation-delay: 600ms;
 }
 
 .visit a:hover {
     background: #96feff;
+}
+
+/*desktop version*/
+/*at row é uma regra CSS que eu passo paramentros e e ela só é satisfeita se a condição dentro dos paranteses for 
+verdadeira*/
+/*se minha largura é de 760px pra cima*/
+@media(min-width: 760px){
+    #container{
+        padding:  5rem 2rem;
+        /*shorthand backgroud: image repeat position/ size */
+        background: url("../images/bg.svg") no-repeat 80% /clamp(30rem, 50vw, 56rem);
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .location, h1, .visit p {
+        height: initial;
+        text-align: initial;
+    }
+
+    .location{
+        font-size: 2.4rem;
+        text-align: right;
+        line-height: 1.5;
+    }
+
+    main h1 {
+        font-size: clamp(4rem, 8vw, 8.4rem);
+        font-weight: bold;
+        line-height: .88;
+
+        margin: clamp(10%,9vh, 12%) 0 4rem;
+
+        width: min(300px, 80%);
+    }
+    .visit{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .visit p {
+        font-size: 2.4rem;
+        line-height: 1.5;
+        width: clamp(20rem, 20vw, 30rem);
+    }
+
+    .visit a{
+        margin: initial;
+    }
+
 }

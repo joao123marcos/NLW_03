@@ -15,6 +15,7 @@ Com relação a especificidade o CSS pode ser aplicado de 3 maneiras
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
   body{
     height: 100vh;
